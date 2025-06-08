@@ -25,7 +25,7 @@ System_Boundary(resource_domain, "Домен Управления ресурса
 }
 
 ' Определение интеграционных компонентов
-Container(event_bus, "Event Bus", "Apache Kafka", "Обмен событиями между доменами")
+Container(event_bus, "Event Bus", "Apache Camel", "Интеграция между доменами")
 Container(legacy_dwh, "Legacy DWH", "Microsoft SQL Server", "Историческое хранилище данных")
 
 ' Потоки данных между доменами

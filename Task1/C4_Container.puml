@@ -1,0 +1,34 @@
+@startuml
+!include https://raw.githubusercontent.com/plantuml-stdlib/C4-PlantUML/master/C4_Container.puml
+
+LAYOUT_WITH_LEGEND()
+
+Person(business_user, "Бизнес-пользователь", "Сотрудник компании, которому нужен доступ к аналитическим данным")
+Person(medical_staff, "Медицинский персонал", "Врачи и медсестры, работающие с медицинскими данными")
+Person(fintech_user, "Пользователь финтех-сервисов", "Клиент, использующий финансовые услуги")
+
+System_Boundary(c1, "Система Будущее 2.0") {
+    Container(portal, "Портал самообслуживания", "React, TypeScript", "Предоставляет интерфейс для работы с аналитическими данными и создания отчетов")
+    Container(auth_service, "Сервис авторизации", "Golang", "Управление доступом и аутентификацией")
+    Container(data_mart, "Витрина данных", "Apache Spark, Delta Lake", "Хранилище аналитических данных")
+    Container(medical_system, "Медицинская система", "Python, FastAPI", "Управление медицинскими данными и ИИ-сервисами")
+    Container(fintech_system, "Финтех-система", "Golang, Java", "Управление финансовыми услугами")
+    Container(integration_bus, "Шина интеграций", "Apache Camel", "Обеспечивает взаимодействие между системами")
+    Container(legacy_dwh, "Legacy DWH", "Microsoft SQL Server", "Историческое хранилище данных")
+}
+
+Rel(business_user, portal, "Использует")
+Rel(medical_staff, medical_system, "Работает с")
+Rel(fintech_user, fintech_system, "Использует")
+
+Rel(portal, auth_service, "Аутентифицируется через")
+Rel(portal, data_mart, "Получает данные из")
+Rel(portal, medical_system, "Запрашивает медицинские данные")
+Rel(portal, fintech_system, "Запрашивает финансовые данные")
+
+Rel(data_mart, integration_bus, "Получает данные через")
+Rel(medical_system, integration_bus, "Обменивается данными через")
+Rel(fintech_system, integration_bus, "Обменивается данными через")
+Rel(legacy_dwh, integration_bus, "Предоставляет данные через")
+
+@enduml 

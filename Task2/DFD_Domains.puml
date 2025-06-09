@@ -1,0 +1,42 @@
+@startuml
+!include https://raw.githubusercontent.com/plantuml-stdlib/C4-PlantUML/master/C4_Container.puml
+
+LAYOUT_WITH_LEGEND()
+
+' Определение доменов
+System_Boundary(medical_domain, "Домен Медицинских услуг") {
+    Container(medical_system, "Медицинская система", "Python, FastAPI", "Управление медицинскими данными")
+}
+
+System_Boundary(financial_domain, "Домен Финансовых услуг") {
+    Container(banking_system, "Банковская система", "Golang", "Управление финансовыми операциями")
+}
+
+System_Boundary(analytics_domain, "Домен Аналитики") {
+    Container(data_mart, "Витрина данных", "Apache Spark, Delta Lake", "Хранение аналитических данных")
+}
+
+System_Boundary(customer_domain, "Домен Управления клиентами") {
+    Container(crm_system, "CRM-система", "Java", "Управление клиентами")
+}
+
+System_Boundary(resource_domain, "Домен Управления ресурсами") {
+    Container(hr_system, "HR-система", "Java", "Управление персоналом")
+}
+
+' Определение интеграционных компонентов
+Container(event_bus, "Event Bus", "Apache Camel", "Интеграция между доменами")
+Container(legacy_dwh, "Legacy DWH", "Microsoft SQL Server", "Историческое хранилище данных")
+
+' Потоки данных между доменами
+Rel(medical_domain, event_bus, "Публикует медицинские данные")
+Rel(financial_domain, event_bus, "Публикует финансовые данные")
+Rel(analytics_domain, event_bus, "Подписывается на данные всех доменов")
+Rel(customer_domain, event_bus, "Публикует данные о клиентах")
+Rel(resource_domain, event_bus, "Публикует данные о ресурсах")
+
+' Интеграция с Legacy DWH
+Rel(legacy_dwh, event_bus, "Публикует исторические данные")
+Rel(analytics_domain, legacy_dwh, "Получает исторические данные")
+
+@enduml 

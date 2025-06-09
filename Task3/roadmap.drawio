@@ -1,0 +1,69 @@
+<mxfile host="65bd71144e">
+    <diagram id="roadmap" name="Роадмап трансформации">
+        <mxGraphModel dx="1794" dy="1286" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1169" pageHeight="827" math="0" shadow="0">
+            <root>
+                <mxCell id="0"/>
+                <mxCell id="1" parent="0"/>
+                <mxCell id="title" value="Роадмап трансформации технологического ландшафта компании &quot;Будущее 2.0&quot;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=24;fontStyle=1" parent="1" vertex="1">
+                    <mxGeometry x="40" y="40" width="970" height="40" as="geometry"/>
+                </mxCell>
+                <mxCell id="phase1" value="Этап 1: Подготовка и анализ&#xa;(1-2 месяца)" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=40;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;fillColor=#dae8fc;strokeColor=#6c8ebf;" parent="1" vertex="1">
+                    <mxGeometry x="40" y="100" width="280" height="130" as="geometry"/>
+                </mxCell>
+                <mxCell id="phase1_results" value="• Анализ архитектуры&#xa;• Определение границ доменов&#xa;• Технические требования&#xa;• Прототип витрины" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" parent="phase1" vertex="1">
+                    <mxGeometry y="40" width="280" height="90" as="geometry"/>
+                </mxCell>
+                <mxCell id="phase2" value="Этап 2: Разработка архитектуры&#xa;(2-3 месяца)" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=40;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;fillColor=#d5e8d4;strokeColor=#82b366;" parent="1" vertex="1">
+                    <mxGeometry x="360" y="100" width="280" height="130" as="geometry"/>
+                </mxCell>
+                <mxCell id="phase2_results" value="• Новая архитектура данных&#xa;• Схема миграции&#xa;• План интеграции&#xa;• Прототип портала" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" parent="phase2" vertex="1">
+                    <mxGeometry y="40" width="280" height="90" as="geometry"/>
+                </mxCell>
+                <mxCell id="phase3" value="Этап 3: Миграция данных&#xa;(3-4 месяца)" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=40;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;fillColor=#ffe6cc;strokeColor=#d79b00;" parent="1" vertex="1">
+                    <mxGeometry x="680" y="100" width="280" height="130" as="geometry"/>
+                </mxCell>
+                <mxCell id="phase3_results" value="• Перенос данных из DWH&#xa;• Настройка ETL-процессов&#xa;• Создание витрин&#xa;• Настройка безопасности" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" parent="phase3" vertex="1">
+                    <mxGeometry y="40" width="280" height="90" as="geometry"/>
+                </mxCell>
+                <mxCell id="phase4" value="Этап 4: Разработка портала&#xa;(2-3 месяца)" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=40;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;fillColor=#fff2cc;strokeColor=#d6b656;" parent="1" vertex="1">
+                    <mxGeometry x="40" y="260" width="280" height="130" as="geometry">
+                        <mxRectangle x="40" y="260" width="200" height="40" as="alternateBounds"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="phase4_results" value="• Функциональный портал&#xa;• Система управления доступом&#xa;• Инструменты отчетов&#xa;• API для интеграции" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" parent="phase4" vertex="1">
+                    <mxGeometry y="40" width="280" height="90" as="geometry"/>
+                </mxCell>
+                <mxCell id="phase5" value="Этап 5: Интеграция и тестирование&#xa;(2-3 месяца)" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=40;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;fillColor=#f8cecc;strokeColor=#b85450;" parent="1" vertex="1">
+                    <mxGeometry x="360" y="260" width="280" height="130" as="geometry"/>
+                </mxCell>
+                <mxCell id="phase5_results" value="• Интеграция систем&#xa;• Нагрузочное тестирование&#xa;• Документация&#xa;• Обучение пользователей" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" parent="phase5" vertex="1">
+                    <mxGeometry y="40" width="280" height="90" as="geometry"/>
+                </mxCell>
+                <mxCell id="phase6" value="Этап 6: Запуск и поддержка&#xa;(Постоянно)" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=40;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;fillColor=#e1d5e7;strokeColor=#9673a6;" parent="1" vertex="1">
+                    <mxGeometry x="680" y="260" width="280" height="130" as="geometry"/>
+                </mxCell>
+                <mxCell id="phase6_results" value="• Рабочая система&#xa;• Мониторинг&#xa;• Поддержка&#xa;• Регулярные обновления" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" parent="phase6" vertex="1">
+                    <mxGeometry y="40" width="280" height="90" as="geometry"/>
+                </mxCell>
+                <mxCell id="arrow1" value="" style="endArrow=classic;html=1;exitX=1;exitY=0.444;exitDx=0;exitDy=0;entryX=0;entryY=0.444;entryDx=0;entryDy=0;entryPerimeter=0;exitPerimeter=0;" parent="1" source="phase1_results" target="phase2_results" edge="1">
+                    <mxGeometry width="50" height="50" relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="arrow2" value="" style="endArrow=classic;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="1" source="phase2" target="phase3" edge="1">
+                    <mxGeometry width="50" height="50" relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="arrow3" value="" style="endArrow=classic;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;edgeStyle=orthogonalEdgeStyle;" parent="1" source="phase3" target="phase4" edge="1">
+                    <mxGeometry width="50" height="50" relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="arrow4" value="" style="endArrow=classic;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="1" source="phase4" target="phase5" edge="1">
+                    <mxGeometry width="50" height="50" relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="arrow5" value="" style="endArrow=classic;html=1;" parent="1" edge="1">
+                    <mxGeometry width="50" height="50" relative="1" as="geometry">
+                        <mxPoint x="640" y="330" as="sourcePoint"/>
+                        <mxPoint x="680" y="330" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+            </root>
+        </mxGraphModel>
+    </diagram>
+</mxfile>
